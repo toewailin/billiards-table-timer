@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#tables-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* Creates 10 columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    /* Adjust width as per your layout needs */
+    margin: auto;
+    /* Centers the container */
+}
+
+.table {
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    /* Makes the table fill the grid column */
+}
+
+.timer {
+    font-size: 48px;
+    /* Increased from 36px to 48px */
+    color: white;
+    background-color: black;
+    border: 2px solid #333;
+    padding: 20px;
+    /* Adjusted for larger font size */
+    display: inline-block;
+    margin: 10px 0;
+    font-family: 'Digital-7 Mono', monospace;
+}
+
+.total {
+    font-size: 18px;
+    margin-top: 10px;
+    color: green;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tables-container button.play {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tables-container button.pause {
+    background-color: #f44336;
+    color: white;
+}
+
+#tables-container button.reset {
+    background-color: #555;
+    color: white;
+}
